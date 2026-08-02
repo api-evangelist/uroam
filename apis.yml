@@ -1,7 +1,23 @@
 aid: uroam
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/uroam.png
 name: Uroam
-description: Uroam is a company surfaced as a portfolio company of canaan-partners and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: uRoam, Inc. (1999-2003) was a Canaan Partners-backed security company that
+  built FirePass, a clientless SSL-VPN appliance for "radically simplified remote access"
+  to enterprise applications from any browser. After merging with Filanet, uRoam was
+  acquired by F5 Networks in July 2003 for $25 million in cash, and FirePass became
+  F5's SSL VPN product line. The company is defunct; uroam.com now redirects to f5.com,
+  and uRoam publishes no APIs or developer surface of its own.
 url: https://raw.githubusercontent.com/api-evangelist/uroam/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,14 +25,35 @@ x-backed-by:
 - canaan-partners
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status:
+  state: acquired
+  acquirer: f5-networks
+  acquired: '2003'
+  price: $25M cash
+  evidence:
+  - https://en.wikipedia.org/wiki/F5,_Inc.
+  - http://web.archive.org/web/20020930095843/http://www.uroam.com:80/
+  domain: uroam.com 301-redirects to https://www.f5.com/ (registrar CSC Corporate Domains); probed 2026-07-21
+  api_surface: none
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Security
+- VPN
+- Remote Access
+- Networking
+- Enterprise
+- Acquired
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 0
+  pass: local-v1
