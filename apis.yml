@@ -35,7 +35,7 @@ x-status:
   - http://web.archive.org/web/20020930095843/http://www.uroam.com:80/
   domain: uroam.com 301-redirects to https://www.f5.com/ (registrar CSC Corporate Domains); probed 2026-07-21
   api_surface: none
-specificationVersion: '0.20'
+specificationVersion: '0.23'
 created: '2026-07-17'
 modified: '2026-07-21'
 tags:
